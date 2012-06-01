@@ -38,7 +38,7 @@ Example:
 
 	BatchInserter inserter = BatchInserters.inserter( "target/neo4jdb-batchinsert" );
 	BatchInserterIndexProvider indexProvider = new MongoBatchInserterIndexProvider( inserter );
-	Map<String, String> config = MapUtil.stringMap( "mongo.db.host", "localhost", "mongo.db.port", "27017", "mongo.db.name", "graph_db", "mongo.collection.name" : "neo4j_batch_index" );
+	Map<String, String> config = MapUtil.stringMap( "mongo.db.host", "localhost", "mongo.db.port", "27017", "mongo.db.name", "graph_db", "mongo.collection.name", "neo4j_batch_index" );
 	BatchInserterIndex actors = indexProvider.nodeIndex( "actors",  );
 	actors.setCacheCapacity( "name", 100000 );
 
