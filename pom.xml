@@ -19,14 +19,12 @@
 			<groupId>org.neo4j</groupId>
 			<artifactId>neo4j-kernel</artifactId>
 			<version>${neo4j-version}</version>
-			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongo-java-driver</artifactId>
 			<version>${mongo-version}</version>
-			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -34,7 +32,6 @@
 		    <artifactId>jedis</artifactId>
 		    <version>${jedis-version}</version>
 		    <type>jar</type>
-		    <scope>runtime</scope>
 		</dependency>
 
 	</dependencies>
