@@ -63,7 +63,7 @@ public class MongoIndexKeyValuePairStore extends AbstractKeyValuePairStore {
 		object.put("propertyValue", propertyValue);
 
 		WriteResult result = lookupCollection.insert(object);
-		result.getCachedLastError().throwOnError();
+		if (result.getCachedLastError() != null) result.getCachedLastError().throwOnError();
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class MongoIndexKeyValuePairStore extends AbstractKeyValuePairStore {
 				});
 
 		WriteResult result = lookupCollection.remove(object);
-		result.getCachedLastError().throwOnError();
+		if (result.getCachedLastError() != null) result.getCachedLastError().throwOnError();
 	}
 
 	@Override
