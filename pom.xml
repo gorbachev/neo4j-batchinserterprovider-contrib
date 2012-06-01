@@ -1,11 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>iki.fi.tpp</groupId>
-  <artifactId>neo4j-batchinserterindexprovider-contrib</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Neo4j BatchInserterIndexProvider Contrib</name>
-  <description>Neo4j BatchInserterIndexProvider implementations</description>
-  <packaging>jar</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>iki.fi.tpp</groupId>
+	<artifactId>neo4j-batchinserterindexprovider-contrib</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Neo4j BatchInserterIndexProvider Contrib</name>
+	<description>Neo4j BatchInserterIndexProvider implementations</description>
+	<packaging>jar</packaging>
+
+	<scm>
+		<connection>scm:git:git@github.com:gorbachev/neo4j-batchinserterprovider-contrib.git</connection>
+		<developerConnection>scm:git:git@github.com:gorbachev/neo4j-batchinserterprovider-contrib.git</developerConnection>
+		<url>https://github.com/gorbachev/neo4j-batchinserterprovider-contrib</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,10 +35,10 @@
 		</dependency>
 
 		<dependency>
-		    <groupId>redis.clients</groupId>
-		    <artifactId>jedis</artifactId>
-		    <version>${jedis-version}</version>
-		    <type>jar</type>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${jedis-version}</version>
+			<type>jar</type>
 		</dependency>
 
 	</dependencies>
@@ -49,17 +56,17 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        		<groupId>org.apache.maven.plugins</groupId>
-        		<artifactId>maven-jar-plugin</artifactId>
-        		<version>2.4</version>
-        		<executions>
-        			<execution>
-        				<goals>
-        					<goal>test-jar</goal>
-        				</goals>
-        			</execution>
-        		</executions>
-      		</plugin>
-      	</plugins>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
 </project>
