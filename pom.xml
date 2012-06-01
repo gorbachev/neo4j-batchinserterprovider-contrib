@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>iki.fi.tpp</groupId>
 	<artifactId>neo4j-batchinserterindexprovider-contrib</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>Neo4j BatchInserterIndexProvider Contrib</name>
 	<description>Neo4j BatchInserterIndexProvider implementations</description>
 	<packaging>jar</packaging>
