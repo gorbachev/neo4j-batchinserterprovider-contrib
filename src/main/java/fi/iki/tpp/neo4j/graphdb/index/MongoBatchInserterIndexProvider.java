@@ -4,6 +4,23 @@ import java.util.Map;
 
 import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
 
+/**
+ * The config must contain the following entries:
+ *
+ * mongo.db.host : The hostname of the MongoDB server used
+ *                 e.g. localhost, 127.0.0.1
+ * mongo.db.port : The port number of the MongoDB server used
+ *                 e.g. 27017
+ * mongo.db.name : The name of the MongoDB used for the indexes
+ *                 e.g. batch_db
+ * mongo.collection.name : The MongoDB collection name used for the indexes
+ *                         e.g. neo4j_batch_index
+ * 
+ * There are no default for these settings
+ * 
+ * @author tpp
+ *
+ */
 public class MongoBatchInserterIndexProvider extends AbstractKeyValueBatchInserterIndexProvider {
 
 	@Override

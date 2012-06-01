@@ -4,6 +4,19 @@ import java.util.Map;
 
 import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
 
+/**
+ * The config must contain the following entries:
+ *
+ * redis.db.host : The hostname of the Redis server used
+ *                 e.g. localhost, 127.0.0.1
+ * redis.db.port : The port number of the Redis server used
+ *                 e.g. 6379
+ * 
+ * There are no default for these settings
+ * 
+ * @author tpp
+ *
+ */
 public class RedisBatchInserterIndexProvider extends AbstractKeyValueBatchInserterIndexProvider {
 
 	@Override
