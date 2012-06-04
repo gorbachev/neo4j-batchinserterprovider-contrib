@@ -94,7 +94,7 @@ public class MongoIndexKeyValuePairStore extends AbstractKeyValuePairStore {
 	@Override
 	public Collection<Pair<String, Object>> findByEntityId(String indexName, Long entityId) {
 		DBObject query = new BasicDBObject();
-		query.put("$and", new DBObject[] { new BasicDBObject("indexName", indexName), new BasicDBObject("value", entityId) });
+		query.put("$and", new DBObject[] { new BasicDBObject("indexName", indexName), new BasicDBObject("entityId", entityId) });
 
 		List<Pair<String, Object>> results = new ArrayList<Pair<String, Object>>();
 		DBCursor cur = lookupCollection.find(query);
