@@ -1,8 +1,10 @@
-package fi.iki.tpp.neo4j.graphdb.index;
+package fi.iki.tpp.neo4j.graphdb.index.mongodb;
 
 import java.util.Map;
 
 import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
+
+import fi.iki.tpp.neo4j.graphdb.index.AbstractKeyValueBatchInserterIndexProvider;
 
 /**
  * The config must contain the following entries:
@@ -16,7 +18,7 @@ import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
  * mongo.collection.name : The MongoDB collection name used for the indexes
  *                         e.g. neo4j_batch_index
  * 
- * There are no default for these settings
+ * There are no defaults for these settings
  * 
  * @author tpp
  *

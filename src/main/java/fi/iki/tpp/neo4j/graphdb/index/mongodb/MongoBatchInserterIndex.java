@@ -1,4 +1,4 @@
-package fi.iki.tpp.neo4j.graphdb.index;
+package fi.iki.tpp.neo4j.graphdb.index.mongodb;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,7 +11,8 @@ import org.neo4j.helpers.Pair;
 import org.neo4j.kernel.impl.cache.LruCache;
 import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
 
-import fi.iki.tpp.neo4j.graphdb.index.mongodb.MongoIndexKeyValuePairStore;
+import fi.iki.tpp.neo4j.graphdb.index.ConstantIndexHitsIterator;
+import fi.iki.tpp.neo4j.graphdb.index.IndexKeyValuePairStore;
 
 /**
  * Indexes Neo4j entities using MongoDB.

@@ -1,4 +1,4 @@
-package fi.iki.tpp.neo4j.graphdb.index;
+package fi.iki.tpp.neo4j.graphdb.index.redis;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,7 +7,8 @@ import java.util.Map;
 import org.neo4j.graphdb.index.IndexHits;
 import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
 
-import fi.iki.tpp.neo4j.graphdb.index.redis.RedisIndexKeyValuePairStore;
+import fi.iki.tpp.neo4j.graphdb.index.ConstantIndexHitsIterator;
+import fi.iki.tpp.neo4j.graphdb.index.IndexKeyValuePairStore;
 
 /**
  * Indexes Neo4j entity properties in Redis.
