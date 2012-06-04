@@ -19,7 +19,6 @@ import org.neo4j.unsafe.batchinsert.BatchInserterIndex;
 import org.neo4j.unsafe.batchinsert.BatchInserterIndexProvider;
 import org.neo4j.unsafe.batchinsert.BatchInserters;
 
-import fi.iki.tpp.neo4j.graphdb.index.memcached.MemcachedBatchInserterIndexProvider;
 import fi.iki.tpp.neo4j.graphdb.index.redis.RedisBatchInserterIndexProvider;
 
 /**
